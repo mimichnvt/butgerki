@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,700;1,6..12,300&family=Poppins:ital,wght@0,300;0,700;1,300&family=Roboto:wght@100;300;400;500;700&family=Source+Code+Pro:ital,wght@0,300;0,700;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left: 0;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1)
+
+}
+
+.menu-icons{
+    width:35px;
+    cursor: pointer;
+    
+}
+
+.logo{
+    width: 100px;
+    margin-left:-10px;
+}
+
+button img{
+    width:20px;
+    margin-left:10px;
+}
+.menu1{
+    display:flex;
+    align-items:center;
+
+}
+.menu1 ul {
+    margin-left:26px;
+    display:flex;
+    list-style:none;
+}
+
+.menu1 ul a {
+    margin-left:26px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color:black;
+    text-decoration: 0;
+    position: relative;
+}
+
+.menu1 ul a::after{
+    position:absolute;
+    left:0;
+    bottom: -5px;
+    content: "";
+    width:0%;
+    height:2px;
+    background-color: #f7a800;
+    transition: 0.1s ease-out;
+}
+
+.menu1 ul a:hover::after{
+    width:100%;
+}
+
+.header-end{
+    display:flex;
+    align-items: center;
+}
+.header-end i {
+    margin-right:20px
+}
+button{
+    cursor:pointer;
+    display:flex;
+    align-items: center;
+    border-radius: 50px;
+    border:0;
+    padding: 8px 15px;
+    background-color: #bb2337;
+    color: white;
+    text-transform: uppercase;
+    z-index: 1;
+    transition: 0.2 ease-out;
+
+}
+button span{
+    font-size: 15px;
+    width:100%;
+    text-align:center
+}
+
+button:hover{
+    transform: scale(1.09);
+}
